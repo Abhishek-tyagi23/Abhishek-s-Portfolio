@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+<style>
+    #bu {
+    width: 590px;
+    font-weight: bold;
+    background-color: rgb(58, 236, 236);
+    font-size: 20px;
+
+}
+
+.contact {
+    margin: 50px 0;
+}
+
+.contact .heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+
+
+
+.contact .form-control {
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(60, 226, 226);
+    background: #e9fbffd0;
+
+    border-radius: 15px;
+}
+
+.contact .title p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+
+.contact .content .info {
+    margin-top: 30px;
+}
+
+#cont {
+    border: 2px solid aqua;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.cont {
+    border: 2px solid aqua;
+    padding: 20px;
+}
+</style>
+
+<!-- main box -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="heading text-center">
+            <h2>Contact
+                <span style="color:rgb(22, 235, 250)"> Us </span>
+            </h2>
+            <h5>We'd Love to Here From You, Get In Touch With Us!</h5>
+        </div>
+
+
+        <br><br>
+        <div class="row">
+
+            <div class="col-md-6" id="cont">
+                <div class="title">
+                    <h2>Contact <span style="color:rgb(22, 235, 250);">Detail</span></h2>
+                    <p>Use Guest mode to signin.Create account. For my personal use
+                    </p>
+                </div>
+                <div class="content">
+
+                    <div class="info">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h6 class="d-inline-block"><img src="static/image/png/phone.png" alt="" width="30" height="30"
+                                style="margin-right: 15px;">PHONE :-
+                            <span>+12457836913 , +12457836913</span>
+                        </h6>
+                    </div>
+
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <h6 class="d-inline-block"><img src="static/image/png/email.png" alt="" width="30" height="25"
+                                style="margin-right: 15px;"> EMAIL :-
+                            <span>example@info.com</span>
+                        </h6>
+                    </div>
+
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <h6 class="d-inline-block"><img src="static/image/png/github.png" alt="" width="30" height="30"
+                                style="margin-right: 15px;"> Github :-
+
+                            <span>Abhishek-tyagi23</span>
+                        </h6>
+                    </div>
+
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <h6 class="d-inline-block"><img src="static/image/png/linked.jpg" alt="" width="30" height="30"
+                                style="margin-right: 15px;"> Linkedin :-
+
+                            <span>Abhishek Tyagi</span>
+                        </h6>
+                    </div>
+
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="d-inline-block"><img src="static/image/png/loc.png" alt="" width="30" height="30"
+                                style="margin-right: 15px;"> ADDRESS :-
+                            <span>6743 last street , Abcd, Xyz</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <form class="cont" action="/contact" method="post">
+                {% csrf_token %}
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="name" placeholder="Name">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn btn-block" id="bu" type="submit">Send Now!</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

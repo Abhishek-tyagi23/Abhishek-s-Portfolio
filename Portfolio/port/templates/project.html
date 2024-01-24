@@ -1,0 +1,696 @@
+{% extends "base.html" %}
+{% block body %}
+
+<style>
+     .heading {
+            font-size: 40px;
+            margin-top: 50px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+
+        }
+
+        .box1 {
+
+            border: 1px solid aqua;
+            border-top: 35px solid rgb(40, 211, 171);
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 320px;
+            width: 510px;
+            margin: 20px;
+            box-shadow: 5px 5px rgb(99, 252, 148);
+
+        }
+
+        .box2 {
+
+            border: 1px solid rgb(229, 25, 137);
+            border-top: 35px solid rgb(245, 12, 172);
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 320px;
+            width: 510px;
+            margin: 20px;
+            box-shadow: 5px 5px rgb(227, 11, 166);
+
+
+        }
+
+        .box3 {
+
+            border: 1px solid rgb(192, 19, 245);
+            border-top: 35px solid rgb(200, 43, 239);
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 320px;
+            width: 510px;
+            margin: 20px;
+            box-shadow: 5px 5px rgb(240, 59, 185);
+
+        }
+
+        .box4 {
+
+            border: 1px solid rgb(36, 197, 250);
+            border-top: 35px solid deepskyblue;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 320px;
+            width: 510px;
+            margin: 20px;
+            box-shadow: 5px 5px rgb(8, 119, 211);
+
+
+        }
+
+        .box5 {
+
+            border: 1px solid rgb(104, 226, 226);
+            border-top: 35px solid darkcyan;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 320px;
+            width: 510px;
+            margin: 20px;
+            box-shadow: 5px 5px #108eb1;
+
+        }
+
+        .box6 {
+
+            border: 1px solid gold;
+            border-top: 35px solid gold;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 320px;
+            width: 510px;
+            margin: 20px;
+            box-shadow: 5px 5px rgb(236, 244, 83);
+
+        }
+
+
+
+        .image {
+
+            border-radius: 50%;
+            margin: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .see {
+            cursor: pointer;
+            font-size: 18px;
+            width: 108px;
+            font-weight: bold;
+            display: flex;
+            margin: 0px auto;
+            padding: 7px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        h2 {
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            margin-left: 15px;
+        }
+
+        hr {
+            border: 0;
+            background: rgb(76, 205, 222);
+            height: 1px;
+            margin: 15px 20px;
+            margin: auto;
+            margin-bottom: 40px;
+
+            width: 93%;
+
+        }
+
+        .jarvis {
+
+
+            display: flex;
+        }
+
+        .jar {
+            border-radius: 30px;
+            margin: auto;
+            border: 2px solid rgb(36, 209, 224);
+            margin-top: 60px;
+            width: 90%;
+        }
+
+        .para {
+            margin: 60px;
+            background-color: #121b1c;
+            border: 2px solid rgb(27, 190, 231);
+        }
+
+        .para2 {
+            margin-left: 20px;
+            height: 600px;
+            overflow-x: auto;
+            margin: 60px;
+            background-color: #121b1c;
+            border: 2px solid rgb(27, 190, 231);
+        }
+
+        pre {
+            margin-left: 50px;
+            margin-top: 50px;
+
+        }
+
+        ul li {
+            list-style: none;
+            margin: 20px 100px;
+
+        }
+
+        .p {
+            padding: 15px;
+        }
+</style>
+
+<!-- main box -->
+<h1 class="heading">We Work in <span style="color:rgb(41, 255, 255)">dedicated Projects</span></h1>
+<!-- Box -->
+<div class="box">
+    <div class="box1">
+
+        <img src="static/image/png/python.jpg" alt="" class="image" width="50"
+            style="border:8px solid rgb(40, 211, 171)">
+        <div class="head">
+            <h2 style="color:rgb(40, 211, 171)">Library Management System</h2>
+            <p>A library management system is software that is designed to manage all the functions of a library.The
+                library management system software helps in reducing operational costs</p>
+        </div>
+        <a href="static/library.txt"><button type="button" class="see" style="background-color: rgb(40, 211, 171);">See
+                Code!</button></a>
+
+
+
+    </div>
+
+
+    <div class="box2">
+        <img src="static/image/png/c++.jpg" alt="" class="image" width="50" style="border:8px solid  rgb(245, 12, 172)">
+        <div class="head">
+            <h2 style="color:rgb(245, 12, 172)">Online Shoppping System</h2>
+            <p>Online shopping is a form of electronic commerce
+                which allows consumers to directly buy goods or
+                services from a seller over the Internet using a
+                mobile app.
+            </p>
+        </div>
+        <a href="static/online.txt"><button type="button" class="see" style="background-color: rgb(245, 12, 172);">See
+                Code!</button></a>
+    </div>
+
+    <div class="box3">
+        <img src="static/image/skill/bootstrap.jpg" alt="" class="image" width="50" style="border:8px solid rgb(200, 43, 239)">
+        <div class="head">
+            <h2 style="color:rgb(200, 43, 239)">iCoder Website</h2>
+            <p>iCoder is a website template. I designes this when I
+                was learning Bootstrap. 7 HTML pages. Easy to
+                edit,Home page,about us,services and contact form.</p>
+        </div>
+        <a href="https://github.com/Abhishek-tyagi23/iCoder2"><button type="button" class="see"
+                style="background-color: rgb(200, 43, 239);">See
+                Code!</button></a>
+    </div>
+</div>
+
+<div class="box">
+    <div class="box4">
+
+        <img src="static/image/skill/html.png" alt="" class="image" width="50" style="border:8px solid deepskyblue">
+        <div class="head">
+            <h2 style="color:deepskyblue">Food Delivery Website</h2>
+            <p>The Online Food Ordering System, is highly
+                customizable, allows the restaurant employeesto
+                easily manage the site content, most importantly
+                the menu.</p>
+        </div>
+        <a href="https://github.com/Abhishek-tyagi23/Food-delivery"><button type="button" class="see"
+                style="background-color: deepskyblue;">See
+                Code!</button></a>
+    </div>
+    <div class="box5">
+
+        <img src="static/image/skill/django.png" alt="" class="image" width="55"height="50" style="border:8px solid	darkcyan">
+        <div class="head">
+            <h2 style="color:darkcyan">E-Commerce in Django</h2>
+            <p>An e-commerce website is one that allows people
+                to buy and sell physical goods,services,provide contact flexiblity contact information and digital
+                products.
+
+            </p>
+        </div>
+        <a href="https://github.com/Abhishek-tyagi23/E-commerce"><button type="button" class="see"
+                style="background-color:darkcyan;">See Code!</button></a>
+    </div>
+    <div class="box6">
+        <img src="static/image/png/sql.png" alt="" class="image" width="55" height="50" style="border:8px solid gold">
+        <div class="head">
+            <h2 style="color:gold">Student Manage Query</h2>
+            <p>We first of all create database in microsoft sql server and then create table with constraints (roll
+                no,name,father_name,dOb,and marks) then insert values.</p>
+        </div>
+        <a href="static/sql.txt"><button type="button" class="see" style="background-color: gold;">See
+                Code!</button></a>
+    </div>
+</div>
+
+<hr>
+<section class="secondsection" style="margin-bottom: 1500px;">
+    <span style=" padding-top: 0px;">Ai Jarvis install Package</span>
+    <h1>Jarvis Ai in Python</h1>
+    <div class="jarvis">
+        <img src="static/image/jarvis.jpg" alt="" class="jar">
+    </div>
+    <div class="para">
+        <ul>
+            <li>JARVIS is a Voice-Based AI Assistant which is developed in Python Programming Language.</li>
+            <li>It uses Different Technologies To Add New Unique Features.</li>
+            <li>t can Automate Tasks with just One Voice Command.</li>
+
+            <li>It is a Desktop Based AI Assistant.</li>
+        </ul>
+    </div>
+    <h2 class="head" style="color:aqua;font-size:45px">Jarvis Ai Code</h2>
+    <div class="para2">
+        <pre>
+import pyttsx3
+import speech_recognition as sr
+import datetime
+import wikipedia
+import webbrowser
+import os
+import smtplib
+
+engine = pyttsx3.init('sapi5')
+voices = engine.getProperty('voices')
+# print(voices[1].id)
+engine.setProperty('voice', voices[0].id)
+
+
+def speak(audio):
+engine.say(audio)
+# query = gt.translate(audio,dest="hi")
+# audio = query.text
+engine.runAndWait()
+
+
+def wishMe():
+hour = int(datetime.datetime.now().hour)
+if hour >= 0 and hour < 12:
+    speak("Good Morning")
+
+elif hour >= 12 and hour < 18:
+    speak("Good Afternoon")
+
+else:
+    speak("Good Evening")
+
+# speak("I am jarvis sir.Please tell me how may i help you")
+
+
+def takeCommand():
+r = sr.Recognizer()
+with sr.Microphone() as sourse:
+    print("Listening....")
+    r.pause_threshold = 1
+    audio = r.listen(sourse)
+
+try:
+    print("Recognizing....")
+    query = r.recognize_google(audio, language='en-in')
+    print(f"user said: {query}\n")
+
+except Exception as e:
+    # print(e)
+    print("Say that again please...")
+    return "None"
+return query
+def sendEmail(to, content):
+server=smtplib.SMTP('samtp.gmail.com',587)
+server.ehlo()
+server.starttls()
+server.login('abhishektyagi2307@gmail.com','ABHISHEK2138433@')
+server.sendmail('abhishektyagi2307@gmail.com',to, content)
+server.close()
+
+
+if __name__ == "__main__":
+wishMe()
+while True:
+    query=takeCommand().lower()
+   
+
+    if 'wikipedia' in query:
+        speak('Searching Wikipedia....')
+        query=query.replace("wikipedia", "")
+        results= wikipedia.summary(query,sentences=2)
+        speak("According to Wikipedia")
+        print(results)
+        speak(results)
+    
+    elif 'open youtube' in query:
+        webbrowser.open("youtube.com")
+    
+    elif 'open google' in query:
+        webbrowser.open("google.com")
+
+    elif 'Jarvis' in query:
+        speak('yes sir')
+
+    elif 'hello jarvis' in query:
+        speak('Hello sir')
+
+    elif 'tum kya kar rahe ho' in query:
+        speak('kuch nahi sir')
+
+    elif 'kya tum mujhe sun rahe hu' in query:
+        speak('yes sir')
+
+    elif 'play music' in query:
+        speak('ok sir')
+        music_dir="E:\\study\\music"
+        songs=os.listdir(music_dir)
+        print(songs)
+        os.startfile(os.path.join(music_dir,songs[0]))
+
+    elif 'play jarvis' in query:
+        speak('ok sir')
+        music_dir="E:\\study\\music2"
+        songs=os.listdir(music_dir)
+        print(songs)
+        os.startfile(os.path.join(music_dir,songs[0]))
+    
+    elif 'time batao' in query:
+        strTime = datetime.datetime.now().strftime("%H:%M:%S")
+        speak(f"Sir,the time is {strTime}")
+
+    elif 'open vs code' in query:
+        codepath = "C:\\Users\\HP\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+        os.startfile(codepath)
+
+    elif 'send email to vishal' in query:
+        try:
+            speak("What should I say?")
+            content=takeCommand()
+            to = "abhishektyagi2307@gmail.com"
+            sendEmail(to,content)
+            speak("Email has been sent!")
+        
+        except Exception as e:
+            print(e)
+            speak("Soory Abhishek, I am not able to send this email")
+
+      </pre>
+    </div>
+
+</section>
+<hr>
+<section class="secondsection" style="margin-bottom: 1500px;">
+    <span style=" padding-top: 0px;">Calling History of phone</span>
+    <h1>Calling History in Data Structure</h1>
+    <div class="jarvis">
+        <img src="static/image/history.jpg" alt="" class="jar">
+    </div>
+    <div class="para">
+        <p class="p">It is not possible to call a phone number from the number itself, but caller ID spoofing can make
+            it
+            appear as if a phone is getting a call from its own number</p>
+        <p class="p">Search For Phone call history details. Find It Here! Compare Results. Find Phone call history
+            details.
+            Millions Search Results. Results Now. All The Info You Need. Search Here. You Ask, We Answer.</p>
+    </div>
+    <h2 class="head" style="color:aqua;font-size:45px">Calling History</h2>
+    <div class="para2">
+        <pre>
+            #include<stdio.h>
+                #include<stdlib.h>
+                
+                typedef struct QNode
+                {
+                    
+                    struct QNode *prev, *next;
+                    long int mobNum;
+                } QNode;
+                
+                typedef struct Queue
+                {
+                    int count;
+                    int totalspace;
+                    QNode *front, *rear;
+                } Queue;
+                
+                typedef struct Hash
+                {
+                    int capacity;
+                    QNode** array;
+                } Hash;
+                
+                
+                QNode* newQNode(long int mobileNumber)
+                {
+                    QNode* temp= (QNode* )malloc(sizeof(QNode));
+                    temp->mobNum=mobileNumber; 
+                    
+                    temp->prev=temp->next=NULL;
+                    
+                    return temp;
+                }
+                
+                Queue* createQueue(int numberOfmobNumbers)
+                {
+                    Queue* que =(Queue* )malloc(sizeof(Queue));
+                    
+                    
+                    que->count=0;
+                    que->front = que->rear=NULL;
+                    
+                    
+                    que-> totalspace=numberOfmobNumbers;
+                    
+                    return que;
+                
+                }
+                Hash* createHash(int capacity)
+                {
+                    Hash* hash =(Hash*)malloc(sizeof(Hash));
+                    hash->capacity = capacity;
+                    
+                    hash->array=(QNode**)malloc(hash->capacity * sizeof(QNode));
+                    
+                    int i;
+                    for(i=0;i < hash->capacity;++i)
+                        hash->array[i]=NULL;
+                        
+                        return hash;
+                }
+                
+                int AreAllFramesFull(Queue* queue)
+                {
+                    return queue->count == queue->totalspace;
+                    
+                }
+                
+                int isQueueEmpty(Queue* queue)
+                {
+                    return queue->rear == NULL;
+                }
+                
+                
+                void deQueue(Queue* queue)
+                {
+                    if (isQueueEmpty(queue))
+                    return;
+                    
+                    if (queue->front==queue->rear)
+                       queue->front=NULL;
+                       
+                       
+                    QNode* temp = queue->rear;
+                    queue->rear = queue->rear->prev;
+                    
+                    if (queue->rear)
+                        queue->rear->next=NULL;
+                       
+                    free(temp);
+                       
+                    queue->count--;
+                
+                       
+                }
+                
+                void deleteFromHash(Hash* hash,long int mobileNumber)
+                {
+                    int i=0;
+                    for(i=0;i<hash->capacity;i++)
+                    {
+                        if(hash->array[i]!=NULL)
+                        if(hash->array[i]->mobNum==mobileNumber)
+                        {
+                            hash->array[i]=NULL;
+                            return ;
+                        }
+                    }
+                }
+                
+                void insertIntoHash(Hash* hash,QNode* temp)
+                {
+                    int i=0;
+                    for(i=0;i<hash->capacity;i++)
+                    {
+                        if(hash->array[i]=temp)
+                        {
+                            hash->array[i]=temp;
+                            return;
+                        }
+                    }
+                }
+                
+                void Enqueue (Queue* queue,Hash* hash,long int mobileNumber )
+                {
+                    
+                    if(AreAllFramesFull(queue))
+                    {
+                        deleteFromHash(hash,queue->rear->mobNum);
+                        deQueue(queue);
+                        
+                    }
+                    
+                    QNode* temp = newQNode(mobileNumber);
+                    temp->next = queue->front;
+                    
+                    if(isQueueEmpty(queue))
+                      queue->rear = queue->front = temp;
+                      
+                    else
+                        {
+                            queue->front->prev=temp;
+                            queue->front=temp;
+                            
+                        }
+                        
+                        insertIntoHash(hash, temp);
+                        
+                        queue->count++;
+                }
+                
+                QNode* checkInHash(Queue* queue,Hash* hash,long int mobileNumber)
+                {
+                    int i=0;
+                    for(i=0;i<hash->capacity;i++)
+                    {
+                        if(hash->array[i]!=NULL)
+                        if(hash->array[i]->mobNum==mobileNumber)
+                        {
+                            return hash->array[i];
+                        }
+                    }
+                    return NULL;
+                }
+                
+                void locateNum(Queue* queue,Hash* hash,long int mobileNumber)
+                
+                {
+                    QNode* reqNum =checkInHash(queue, hash, mobileNumber);
+                    
+                    if(reqNum==NULL)
+                      Enqueue(queue,hash,mobileNumber);
+                      
+                      
+                    else if(reqNum !=queue->front)
+                    {
+                        reqNum->prev->next=reqNum->next;
+                        if(reqNum->next)
+                           reqNum->next->prev=reqNum->prev;
+                           
+                        if(reqNum==queue->rear)
+                        {
+                            queue->rear=reqNum->prev;
+                            queue->rear->next=NULL;
+                            
+                        }
+                        reqNum->next=queue->front;
+                        reqNum->prev=NULL;
+                        
+                        reqNum->next->prev=reqNum;
+                        
+                        queue->front=reqNum;
+                    }
+                }
+                
+                void printNumbers(Queue* queue)
+                {
+                    QNode* q=queue->front;
+                    while(q!=NULL)
+                    {
+                     printf("%ld-->",q->mobNum);
+                     q=q->next;
+                     
+                    }
+                    printf("\n");
+                }
+                
+                
+                int main()
+                {
+                    
+                    printf("---------------------------------------------------------------------------------------------\n");
+                    printf("                           ---------------------------------                                 \n");
+                    printf("                                 WELCOME  HISHORY                                            \n");
+                    printf("                           ---------------------------------                                 \n");
+                    printf("---------------------------------------------------------------------------------------------\n");
+                    
+                    Queue* q=createQueue(5);
+                    
+                    
+                    Hash* hash=createHash(5);
+                    
+                    locateNum(q, hash, 7854541547);
+                    printNumbers(q);
+                    locateNum(q, hash, 7850254547);
+                    printNumbers(q);
+                    locateNum(q, hash, 8454541557);
+                    printNumbers(q);
+                    locateNum(q, hash, 9955541547);
+                    printNumbers(q);
+                    locateNum(q, hash, 8954541540);
+                    printNumbers(q);
+                    locateNum(q, hash, 7504541547);
+                    printNumbers(q);
+                    locateNum(q, hash, 9404541547);
+                    printNumbers(q);
+                   
+                    return 0;
+                }
+                
+                
+          </pre>
+    </div>
+
+</section>
+
+
+{% endblock body %}

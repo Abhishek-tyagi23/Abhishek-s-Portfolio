@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block body %}
+<style>
+     .head{
+            font-size: 30px;;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .head1{
+            padding:20px;
+            margin-left: 100px;
+            font-size: 20px;;
+            margin-top: 50px;
+           
+        }
+        .para1{
+            padding:20px;
+            margin-left: 100px;
+            font-size: 20px;;
+            /* margin-top: 0px; */
+           
+        }
+        .para{
+            font-size: 20px;
+            margin:20px auto;
+            /* border:2px solid red; */
+            display: flex;
+            width:1000px;
+            text-align: center;
+            
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            box-shadow: 5px 5px 10px rgb(78, 253, 253);
+            /* display: flex; */
+            height:300px;
+            border:3px solid rgb(42, 202, 234);
+            width:300px;
+            margin: 10px 20px;
+            justify-items: center;
+            background-image: linear-gradient(rgb(0, 0, 255), rgb(143, 10, 180),rgb(219, 13, 89));
+        }
+        p{
+            padding:10px;
+            font-size: 16px;;
+        }
+</style>
+<div class="head">
+    <h1>Our <span style="color:rgb(20, 253, 253)">Services</span></h1>
+</div>
+<div class="para">
+    <p>Welcome to <span style="color:rgb(20, 254, 254)">AbhisheK's</span> portfolio of services. I specialize in
+        providing [industry/niche]-focused solutions tailored to meet your unique needs. Explore the services below to
+        discover how we can collaborate to achieve your goals.</p>
+</div>
+<h1 style="margin-left: 100px;">Web Development & Design</h1><br>
+
+<div class="content">
+    <div class="box">
+        <h2 style="margin:10px 20px;">Knowledge Base</h2>
+        <p> A knowledge base is a self-serve online library of information about a product, service, department, or
+            topic. The data in your knowledge base can come from anywhere. subjects add to and expand the knowledge base
+        </p>
+
+    </div>
+    <div class="box">
+        <h2 style="margin:10px 20px;">Learn Code</h2>
+        <p>CodeLearn is an online interactive platform that helps users to learn, practice coding skills and join the
+            developer community with millions of programmers.Learn the technical skills to get the job you want. Join
+            over 50 million people.</p>
+    </div>
+    <div class="box">
+        <h2 style="margin:10px 20px;">Community</h2>
+        <p>A community is a social unit (a group of living things) with a shared socially significant characteristic,
+            such as place, set of norms, culture, religion, values, customs,community importance or identity.</p>
+    </div>
+    <div class="box">
+        <h2 style="margin:10px 20px;">Inspire</h2>
+        <p>The best Design inspirations expertly cerated for you.The objective of the scheme is to target one million
+            original ideas/innovations rooted in science and societal applications.</p>
+    </div>
+</div><br><br><br><br>
+{% endblock body %}

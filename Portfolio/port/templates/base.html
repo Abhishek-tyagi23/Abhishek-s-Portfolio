@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Abhishek-Porfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style2.css">
+    
+</head>
+
+<body>
+    {% if messages %}
+    {% for message in messages %}
+    <!-- alert -->
+    <div class="alert alert-{{message.tag}} alert-dismissible fade show my-0 py-2" style="background-color: rgb(11, 105, 105); color:white;border:none" role="alert">
+       <strong> {{ message }}</strong>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="left">Abhishek's Port<span style="color:rgb(9, 196, 229)">folio</span></div>
+            <div class="right">
+                <ul>
+                    <li style="margin-top: 25px;"><a href="/">Home</a></li>
+                    <li style="margin-top: 25px;"><a href="about">About</a></li>
+                    <li>
+                        <div class="dropdown" style="margin-top:15px;">
+                            <button onclick="myFunction()" class="dropbtn">Services</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="service">Web Design and Development</a>
+                                <a href="service">Content Creation</a>
+                                <a href="about">Python</a>
+                                <a href="about">Courses</a>
+                                <a href="project">Project</a>
+                                <a href="/">Certificates</a>
+                                <a href="contact">Contact</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li style="margin-top: 25px;"><a href="project">Project</a></li>
+                    <li style="margin-top: 25px;"><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    {% block body %}
+
+    {% endblock body %}
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Abhishek's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>Footer</li>
+                    <li>Skill</li>
+                    <li>Course</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Serveces</li>
+                    <li>Footer</li>
+                    <li>Project</li>
+                    <li>Course</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Profile</li>
+                    <li>Interest</li>
+                    <li>Language</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="text-right">
+            Copyright &copy;2024 abhishek'portfolio.com | All right reserved
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        alert("Welcome To Abhishek's Portfolio Website")
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Coding Fresher', 'Web Devloper', 'Python with Django', 'SQL(Microsoft sql server)',
+                'Bootstrap'],
+            typeSpeed: 120,
+        });
+
+    </script>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
+    </script>
+</body>
+
+</html>

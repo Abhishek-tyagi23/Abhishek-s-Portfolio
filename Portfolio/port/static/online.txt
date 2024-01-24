@@ -1,0 +1,302 @@
+-----------------------OnLine Shopping Code--------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+char starvalue;
+char choiceagain;
+float onlineshopping(void);
+startlevel:
+cout<<"please prees s to start shopping"<<endl;
+start:
+cin>>starvalue;
+if(starvalue=='s'||starvalue=='S')
+{
+  float totalamount=onlineshopping();  
+  cout<<"Total billamount is "<<totalamount<<endl;
+  shopagain:
+  cout<<"Do you want shopping again, y or n"<<endl;
+  cin>>choiceagain;
+  if(choiceagain=='y'|| choiceagain=='Y'){
+    goto  startlevel;  
+  }
+  else if(choiceagain=='n' || choiceagain=='N'){
+      cout<<"Thanks for shopping"<<endl;
+  }
+  else{
+      cout<<"you have enter wrong option, plese type again"<<endl;
+      goto shopagain;
+  }
+}
+else{
+    cout<<"you have enter wrong option,please s"<<endl;
+    goto start;
+    }
+}
+float onlineshopping(){
+char choice;  
+char item;
+int quantity;
+float billamount=0;
+itemlevel:
+cout<<"********WELCOME TO ONLINE SHOPPING***********"<<endl;    
+cout<<"--------PLEASE FOLLOW THE INSTRUCTION--------"<<endl;
+cout<<"(1) plese enter m to order mobile phone"<<endl;
+cout<<"(2) plese enter l to order laptops"<<endl;
+cout<<"(3) plese enter d to order desktop"<<endl;
+cout<<"(4) plese enter s to order speakers"<<endl;
+cout<<"(5) plese enter h to order headphone"<<endl;
+cin>>choice;
+//*******************mobile*******************//
+if(choice=='m' || choice=='M'){
+    mobilelevel:
+    cout<<"MOBILE DETAILS"<<endl;
+    cout<<"(1) Apple    => Price : 40000"<<endl;
+    cout<<"(2) Vivo     => Price : 25000"<<endl;
+    cout<<"(3) Oppo     => Price : 20000"<<endl;
+    cout<<"(4) redme    => Price : 18000"<<endl;
+    cout<<"(5) Samsung  => Price : 35000"<<endl;
+    cout<<"(6) realme   => Price : 25000"<<endl;
+    cout<<"Please enter your choice"<<endl;
+    cin>>item;
+    if(item=='1'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*40000;
+    }
+    else if(item=='2'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*25000;
+    }
+     else if(item=='3'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*20000;
+    }
+     else if(item=='4'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*18000;
+    }
+     else if(item=='5'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*35000;
+    }
+     else if(item=='6'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*25000;
+    }
+    else{
+        cout<<"you have enter wrong option,please type again"<<endl;
+        goto mobilelevel;
+    }
+    
+
+} 
+//*******************laptops*******************//
+else if(choice=='l' || choice=='L'){
+    laptoplevel:
+    cout<<"Laptops DETAILS"<<endl;
+    cout<<"(1) Apple MacBook    => Price : 200000"<<endl;
+    cout<<"(2) HP laptop        => Price : 85000"<<endl;
+    cout<<"(3) Dell laptop      => Price : 75000"<<endl;
+    cout<<"(4) Lenovo           => Price : 70000"<<endl;
+    cout<<"(5) Samsung          => Price : 90000"<<endl;
+    cout<<"(6) Acer laptops     => Price : 65000"<<endl;
+    cout<<"Please enter your choice"<<endl;
+    cin>>item;
+    if(item=='1'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*200000;
+    }
+    else if(item=='2'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*85000;
+    }
+     else if(item=='3'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*75000;
+    }
+     else if(item=='4'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*70000;
+    }
+     else if(item=='5'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*90000;
+    }
+     else if(item=='6'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*65000;
+    }
+    else{
+        cout<<"you have enter wrong option,please type again"<<endl;
+        goto laptoplevel;
+    }
+    
+
+}
+//*******************desktop*******************//
+else if(choice=='d' || choice=='D'){
+    desktoplevel:
+    cout<<"desktop DETAILS"<<endl;
+    cout<<"(1) Apple            => Price : 100000"<<endl;
+    cout<<"(2) HP               => Price : 35000"<<endl;
+    cout<<"(3) Dell             => Price : 25000"<<endl;
+    cout<<"(4) Lenovo           => Price : 26000"<<endl;
+    cout<<"(5) Samsung          => Price : 35000"<<endl;
+    cout<<"(6) Acer             => Price : 36000"<<endl;
+    cout<<"Please enter your choice"<<endl;
+    cin>>item;
+    if(item=='1'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*100000;
+    }
+    else if(item=='2'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*35000;
+    }
+     else if(item=='3'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*25000;
+    }
+     else if(item=='4'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*26000;
+    }
+     else if(item=='5'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*35000;
+    }
+     else if(item=='6'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*36000;
+    }
+    else{
+        cout<<"you have enter wrong option,please type again"<<endl;
+        goto desktoplevel;
+    }
+    
+
+}
+//*******************speakers*******************//
+else if(choice=='s' || choice=='S'){
+    speakerslevel:
+    cout<<"Speakers DETAILS"<<endl;
+    cout<<"(1) Apple             => Price : 40000"<<endl;
+    cout<<"(2) Sony              => Price : 30000"<<endl;
+    cout<<"(3) Amazon            => Price : 25000"<<endl;
+    cout<<"(4) Bose              => Price : 26000"<<endl;
+    cout<<"(5) JBL               => Price : 35000"<<endl;
+    cout<<"(6) Bosch             => Price : 36000"<<endl;
+    cout<<"Please enter your choice"<<endl;
+    cin>>item;
+    if(item=='1'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*40000;
+    }
+    else if(item=='2'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*30000;
+    }
+     else if(item=='3'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*25000;
+    }
+     else if(item=='4'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*26000;
+    }
+     else if(item=='5'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*35000;
+    }
+     else if(item=='6'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*36000;
+    }
+    else{
+        cout<<"you have enter wrong option,please type again"<<endl;
+        goto speakerslevel;
+    }
+    
+
+}
+//*******************headphone*******************//
+else if(choice=='h' || choice=='H'){
+    headphonelevel:
+    cout<<"headphone DETAILS"<<endl;
+    cout<<"(1) Apple             => Price : 3000"<<endl;
+    cout<<"(2) Sony              => Price : 2000"<<endl;
+    cout<<"(3) BoAT              => Price : 1500"<<endl;
+    cout<<"(4) zebronics         => Price : 1000"<<endl;
+    cout<<"(5) JBL Tune 510BT    => Price : 1000"<<endl;
+    cout<<"(6) one plus          => Price : 2000"<<endl;
+    cout<<"Please enter your choice"<<endl;
+    cin>>item;
+    if(item=='1'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*3000;
+    }
+    else if(item=='2'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*2000;
+    }
+     else if(item=='3'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*1500;
+    }
+     else if(item=='4'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*1000;
+    }
+     else if(item=='5'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*1000;
+    }
+     else if(item=='6'){
+        cout<<"Enter quantity"<<endl;
+        cin>>quantity;
+        billamount=billamount+quantity*2000;
+    }
+    else{
+        cout<<"you have enter wrong option,please type again"<<endl;
+        goto headphonelevel;
+    }
+}
+    else{
+        cout<<"you have enter wrong option,please type again"<<endl;
+        goto itemlevel;
+    }
+
+
+return billamount;
+}

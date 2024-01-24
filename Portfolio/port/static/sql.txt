@@ -1,0 +1,22 @@
+-----Create Database in sql-----
+CREATE DATABASE COLLEGE
+
+-------Use Database query-----
+USE COLLEGE
+
+---------Create table-----------
+CREATE TABLE Student(
+    ID INT PRIMARY kEY,
+    NAME VARCHAR[50] NOT NULL,
+    FATHER NAME VARCHR[50] NOT NULL,
+    PHONE NUMBER INT[11] unique,
+    MARKS INT 
+);
+
+------------Insert values in table-------------
+INSERT INTO FROM STUDEND VALUES(
+    1 ,"ABHISHEK","VINOD KUMAR",12345679,489
+    2 ,"ABHI","SHIVAM",16654679,389
+    3 ,"VISHAL","HARESH",78797679,259
+    4 ,"SHIVANI","RAM",12345679,445
+);

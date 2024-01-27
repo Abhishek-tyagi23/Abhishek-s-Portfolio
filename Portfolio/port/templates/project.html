@@ -691,6 +691,42 @@ while True:
     </div>
 
 </section>
+<section class="secondsection" style="margin-bottom: 1500px;">
+    <span style=" padding-top: 0px;">Ai Jarvis install Package</span>
+    <h1>Jarvis Ai in Python</h1>
+    <div class="jarvis">
+        <img src="static/image/robo.jpg" alt="" class="jar">
+    </div>
+    <div class="para">
+        <ul>
+            <li>Robot speaker is a kind of speaker unit which is used for multimedia devices</li>
+            <li>Multimedia Speakers have loud sound, wide frequency response range and rich bass.</li>
+            <li>This Python 3 environment comes with many helpful analytics libraries installed </li>
+
+            <li>It is a Desktop Based AI Assistant.</li>
+        </ul>
+    </div>
+    <h2 class="head" style="color:aqua;font-size:45px">Robo Speaker Code</h2>
+    <div class="para2">
+        <pre>
+# import os
+import win32com.client 
+
+speaker = win32com.client.Dispatch("SAPI.SpVoice") 
+if __name__== '__main__':
+    print("Welcome to RoboSpeaker 2.0 .Created By Abhishek")
+    speaker.speak("Welcome to RoboSpeaker 2.0 .Created By Abhishek")
+    while True:
+        x = input("Enter what you want me to speak: ")
+        if x == "q":
+            speaker.speak("say 'bye bye friend'")
+            break
+        command = f" {x}"
+        speaker.speak(command)
+      </pre>
+    </div>
+
+</section>
 
 
 {% endblock body %}
